@@ -122,7 +122,7 @@ class Wrapper extends \yii\base\Widget
                             options: '$options'
                         },
                         success: function(data) {
-                           $('#{$this->htmlOptions['id']}').html(data);
+                           $('body').append(data);
                         }
                     });
                 }
